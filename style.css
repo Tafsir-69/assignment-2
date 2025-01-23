@@ -392,9 +392,7 @@ footer {
    .story1{
     display: none;
    }
-   .grid-container{
-    grid-template-columns: repeat(1,1fr);
-   }
+  
    .btn1{
   
    margin: 20px 0px 20px 100px;
@@ -407,4 +405,26 @@ footer {
 
    
   }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+
+@media (max-width: 576px) {
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .s-card {
+        width: 100%;
+        height: auto;
+    }
+    .btn1 {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        display: block;
+    }
+}
  

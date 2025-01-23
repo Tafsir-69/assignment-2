@@ -364,11 +364,18 @@ footer {
 .footer-3 img:hover {
   background-color: beige;
 }
+.icon{
+  display: none;
+}
 
 
 
 
   @media screen and (max-width:576px) {
+    .icon{
+      display: block;
+      margin-top: 10px;
+    }
     .bnner-container{
         flex-direction: column-reverse;
     }
@@ -410,7 +417,6 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
 }
-
 
 @media (max-width: 576px) {
     .grid-container {
